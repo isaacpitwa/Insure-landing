@@ -56,6 +56,10 @@ nav.header{
 .heading {
     font-family: 'DM Serif Display', serif;
 }
+button.toggle-btn{
+display: none;
+}
+
 
 
 section.landing{
@@ -255,3 +259,24 @@ text-transform: uppercase;
 .helpful-links .link-item  a:hover{
     text-decoration: underline;
 }
+
+
+/* Mobile View */
+@media screen and (max-width: 600px) {
+    .collapse-items ul, .collapse-items button.action-btn {display: none;}
+    .collapse-items button.toggle-btn {
+      float: right;
+      display: block;
+    }
+    nav.responsive {position: relative;}
+  nav.responsive  button.toggle-btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  nav.responsive .collapse-items li {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  }
