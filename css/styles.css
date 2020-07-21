@@ -18,8 +18,11 @@ nav.header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1% 8%;
+    padding: 1% 8% 1% 0;
     background-color: var(--light-gray);
+}
+.header .brand{
+    margin-left: 9%;
 }
 .header .collapse-items{
     display: flex;
@@ -28,6 +31,10 @@ nav.header{
 .header-nav{
     list-style: none;
     display: inline-flex;
+   
+}
+.header-nav li{
+    margin: auto;
 }
 .header-nav li a{
     padding: 0 24px;
@@ -47,6 +54,7 @@ nav.header{
     margin-left: 32px;
     text-transform: uppercase;
     background-color: var(--light-gray);
+    
 }
 .action-btn:hover{
     background-color: hsl(270, 9%, 17%);
@@ -56,8 +64,13 @@ nav.header{
 .heading {
     font-family: 'DM Serif Display', serif;
 }
-button.toggle-btn{
-display: none;
+.toggle-btn{
+    display: none;
+}
+#toggleBtn{
+background-image: url('/images/icon-hamburger.svg');
+width: 32px;
+height: 32px;
 }
 
 
@@ -266,10 +279,53 @@ text-transform: uppercase;
 
 /* Mobile View */
 @media screen and (max-width: 600px) {
-    .collapse-items ul, .collapse-items button.action-btn {display: none;}
-    .collapse-items button.toggle-btn {
+    .header .collapse-items {display: none;}
+    button.toggle-btn {
       float: right;
       display: block;
+    }
+
+  }
+
+  @media screen and (max-width:600px){
+    .responsive {position: relative;}
+    .responsive button.toggle-btn {
+        z-index: 1;
+        display: block;
+    }
+    .responsive {position: relative;}
+    .responsive .collapse-items {
+      display: block;
+      position: absolute;
+      background-color: #f9f9f9;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      min-width: 100%;
+      top: 45px;
+      height: 650px;
+      background: url('/images/bg-pattern-mobile-nav.svg') bottom var(--very-dark-violet);
+      background-repeat: no-repeat;
+    }
+    .responsive .opened#toggleBtn{
+        background-image: url('/images/icon-close.svg');
+    }
+    .header-nav{
+        display: block;
+        text-align: center;
+    }
+    .header-nav li{
+        margin: 18% auto;
+        
+    }
+    .header-nav li a{
+        color: var(--light-gray);
+    }
+    .header-nav li:last-child button{
+        width: 80%;
+        margin: auto;
+        color: var(--light-gray);
+        background-color: transparent;
+        border: 1px solid var(--light-gray);
     }
   }
 

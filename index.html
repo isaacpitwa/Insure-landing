@@ -21,7 +21,7 @@
   <a class="brand" href="#">
     <img src="./images/logo.svg" alt="Insure"/>
   </a>
- <div class="collapse-items">
+ <div class="collapse-items" id="collapseNav">
   <ul class="header-nav">
     <li class="nav-item">
       <a class="nav-link" href="#">How we work</a>
@@ -32,11 +32,10 @@
     <li class="nav-item">
       <a class="nav-link" href="#">Account</a>
     </li>
+    <li><button class="action-btn" name="View Plans">View plans</button></li>
   </ul>
-  <button class="toggle-btn" onclick="toggleNavMenu()"><img src="./images/icon-hamburger.svg" alt="Menu" /></button>
-  <button class="action-btn" name="View Plans">View plans</button>
  </div>
-
+ <button class="toggle-btn"   onclick="toggleNavMenu()"><div id="toggleBtn" ></div></button>
 </nav>
   <section class="landing">
     <div class="first-row">
