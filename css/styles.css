@@ -274,7 +274,7 @@ text-transform: uppercase;
   }
 
   @media screen and (max-width: 600px) {
-      .landing{
+      section.landing{
           text-align: center;
       }
     .landing .first-row{
@@ -285,7 +285,9 @@ text-transform: uppercase;
         position: relative;
         z-index: 0;
         background-image: url('/images/image-intro-mobile.jpg');
-        height: 451px;
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: cover;
         width: 100%;
     }
     .landing  .first-row .dash{
@@ -294,6 +296,9 @@ text-transform: uppercase;
     .landing .content{
         max-width: unset;
         padding: 21% 3%;
+        background: url('/images/bg-pattern-intro-left-mobile.svg') left top , url('/images/bg-pattern-intro-right-mobile.svg')  bottom right  var(--dark-violet-color);
+        background-repeat: no-repeat;
+        background-size: 7rem,4rem;;
     }
 
     .different .dash {
