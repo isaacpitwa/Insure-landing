@@ -19,6 +19,7 @@ nav.header{
     align-items: center;
     justify-content: space-between;
     padding: 1% 8%;
+    background-color: var(--light-gray);
 }
 .header .collapse-items{
     display: flex;
@@ -245,4 +246,7 @@ footer .links {
 text-decoration: none;
 color: var(--dark-violet-color);
 text-transform: uppercase;
+}
+.helpful-links .link-item  a:hover{
+    text-decoration: underline;
 }
