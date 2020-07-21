@@ -212,7 +212,7 @@ footer .links {
 .link-item {
     margin: 8% 0;
 }
-.link-item  a{
+.helpful-links .link-item  a{
 text-decoration: none;
 color: var(--dark-violet-color);
 text-transform: uppercase;
