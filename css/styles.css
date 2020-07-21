@@ -191,7 +191,7 @@ footer .branding {
     margin-left: auto;
 }
 .branding ul li {
-    padding-right: 10%;
+    padding-right: 15px;
 }
 .branding ul li:last-child{
     padding: 0;
@@ -203,8 +203,9 @@ footer .branding {
 .icon{
     width: 24px;
     height: 24px;
-    background-size: cover;
+    background-size: contain;
     display: flex;
+    background-repeat: no-repeat;
 }
 .icon:hover{
     filter: invert(13%) sepia(20%) saturate(421%) hue-rotate(227deg) brightness(88%) contrast(90%);
@@ -214,6 +215,8 @@ footer .branding {
 }
 .icon-twitter{
     background-image: url('/images/icon-twitter.svg');
+    width: 28px;
+    height: 28px;
 }
 .icon-pinterest{
     background-image: url('/images/icon-pinterest.svg');
@@ -226,9 +229,11 @@ footer hr {
 }
 .helpful-links{
     display: flex;
-    justify-content: space-between;
 }
 
+footer .list {
+    margin-right: auto;
+}
 footer .list h6 {
     font-size: .8rem;
     text-transform: uppercase;
