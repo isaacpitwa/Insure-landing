@@ -19,6 +19,7 @@ nav.header{
     align-items: center;
     justify-content: space-between;
     padding: 1% 8%;
+    background-color: var(--light-gray);
 }
 .header .collapse-items{
     display: flex;
