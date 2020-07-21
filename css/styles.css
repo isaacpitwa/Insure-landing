@@ -1,5 +1,8 @@
+:root {
+    --main-bg-color: coral;
+  }
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Karla', sans-serif;
 }
 
 
@@ -23,6 +26,7 @@ nav.header{
     padding: 0 24px;
     text-decoration: none;
     color: hsl(273, 4%, 51%);
+    text-transform: uppercase;
 }
 .header-nav li a:hover{
     color: hsl(270, 9%, 17%);
@@ -34,10 +38,18 @@ nav.header{
     color: hsl(270, 9%, 17%);
     font-size: 16px;
     margin-left: 32px;
+    text-transform: uppercase;
 }
 .action-btn:hover{
     background-color: hsl(270, 9%, 17%);
     border: 0;
     color: hsl(0, 0%, 98%);
     cursor: pointer;
+}
+.heading {
+    font-family: 'DM Serif Display', serif;
+}
+
+section.landing{
+    background-color: ;
 }
