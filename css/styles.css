@@ -326,6 +326,7 @@ text-transform: uppercase;
     }
     .footer{
         background-image: url('/images/bg-pattern-footer-mobile.svg');
+        background-position: top left;
     }
     footer .branding{
         flex-direction: column;
