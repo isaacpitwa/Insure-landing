@@ -45,6 +45,7 @@ nav.header{
     font-size: 16px;
     margin-left: 32px;
     text-transform: uppercase;
+    background-color: var(--light-gray);
 }
 .action-btn:hover{
     background-color: hsl(270, 9%, 17%);
@@ -174,6 +175,9 @@ section.banner{
     margin-top: 8%;
     padding: 6% 8%;
     background-color: var(--light-gray);
+    background-image: url('/images/bg-pattern-footer-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: top left;
 }
 footer .branding {
     display: flex;
@@ -183,14 +187,39 @@ footer .branding {
 .branding ul{
     display: flex;
     list-style: none;
+    margin-left: auto;
 }
 .branding ul li {
-    padding-right: 12%;
+    padding-right: 10%;
 }
 .branding ul li:last-child{
     padding: 0;
 }
-
+.branding ul li a:hover{
+    cursor: pointer;
+    color: var(--dark-violet-color);
+}
+.icon{
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    display: flex;
+}
+.icon:hover{
+    filter: invert(13%) sepia(20%) saturate(421%) hue-rotate(227deg) brightness(88%) contrast(90%);
+}
+.icon-fb {
+    background-image: url('/images/icon-facebook.svg');
+}
+.icon-twitter{
+    background-image: url('/images/icon-twitter.svg');
+}
+.icon-pinterest{
+    background-image: url('/images/icon-pinterest.svg');
+}
+.icon-instagram{
+    background-image: url('/images/icon-instagram.svg');
+}
 footer hr {
     margin-bottom: 4%;
 }
