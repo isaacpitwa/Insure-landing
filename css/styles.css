@@ -1,8 +1,14 @@
 :root {
-    --main-bg-color: coral;
+    --dark-violet-color: hsl(256, 26%, 20%);
+    --grayish-blue: hsl(216, 30%, 68%);
+
+    --very-dark-violet:hsl(270, 9%, 17%);
+    --dark-grayish-violet:hsl(273, 4%, 51%);
+    --light-gray:hsl(0, 0%, 98%);
   }
 *{
     font-family: 'Karla', sans-serif;
+    margin: 0;
 }
 
 
@@ -12,7 +18,7 @@ nav.header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 8%;
+    padding: 1% 8%;
 }
 .header .collapse-items{
     display: flex;
@@ -42,7 +48,6 @@ nav.header{
 }
 .action-btn:hover{
     background-color: hsl(270, 9%, 17%);
-    border: 0;
     color: hsl(0, 0%, 98%);
     cursor: pointer;
 }
@@ -50,6 +55,38 @@ nav.header{
     font-family: 'DM Serif Display', serif;
 }
 
+
 section.landing{
-    background-color: ;
+    background-color: var(--dark-violet-color);
+    display: flex;
+    padding: 8% 8% 4% 8%;
+    color: var(--light-gray);
 }
+.landing .dash{
+    height: 2px;
+    background-color: var(--light-gray);
+    width: 30%;
+}
+.landing h1{
+        font-size: 66px;
+}
+.landing p{
+    margin-top: 9%;
+    word-spacing: 0.1rem;
+}
+.landing .content{
+    padding-right: 4%;
+}
+.landing-btn{
+    border-color: var(--light-gray);
+    color: var(--light-gray);
+    background-color: var(--dark-violet-color);
+    margin-left: 0;
+    margin-top: 7%;
+}
+.landing-btn:hover{
+    background-color: var(--light-gray);
+    color: var(--dark-violet-color);
+}
+
+.landing 
