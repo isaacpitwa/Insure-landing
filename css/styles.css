@@ -246,3 +246,6 @@ text-decoration: none;
 color: var(--dark-violet-color);
 text-transform: uppercase;
 }
+.helpful-links .link-item  a:hover{
+    text-decoration: underline;
+}
