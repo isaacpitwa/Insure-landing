@@ -294,11 +294,11 @@ text-transform: uppercase;
       background-color: #f9f9f9;
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       z-index: 1;
-      background-color: var(--very-dark-violet);
       min-width: 100%;
       top: 45px;
-      height: 540px;
-      
+      height: 650px;
+      background: url('/images/bg-pattern-mobile-nav.svg') bottom var(--very-dark-violet);
+      background-repeat: no-repeat;
     }
     .responsive .opened#toggleBtn{
         background-image: url('/images/icon-close.svg');
