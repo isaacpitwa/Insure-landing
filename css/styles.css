@@ -111,7 +111,7 @@ section.landing{
     margin-bottom: 5%;
 }
  section.different{
-    padding: 21% 8% 8% 8%;
+    padding: 21% 8% 3% 8%;
     background-color: white;
 }
 .different-heading{
@@ -143,8 +143,13 @@ section.banner{
     background-color: var(--dark-violet-color);
     color: var(--light-gray);
     display: flex;
-    padding: 6% 8% ;
-
+    margin: 0% 8% 0% 8% ;
+    padding: 3% 3%;
+    align-items: center;
+    background-image: url('/images/bg-pattern-how-we-work-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: top right -2%;
+    background-size: contain;
 }
 .banner div {
     min-width: 50%;
@@ -153,7 +158,7 @@ section.banner{
     text-align: right;
 }
 .banner div  h1{
-    font-size: 3.6rem;
+    font-size: 3.2rem;
 }
 .banner-btn {
     border: 1px solid var(--light-gray);
