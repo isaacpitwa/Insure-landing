@@ -18,11 +18,11 @@ nav.header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1% 0;
+    padding: 1% 8% 1% 0;
     background-color: var(--light-gray);
 }
 .header .brand{
-    margin-left: 4%;
+    margin-left: 9%;
 }
 .header .collapse-items{
     display: flex;
@@ -31,6 +31,7 @@ nav.header{
 .header-nav{
     list-style: none;
     display: inline-flex;
+   
 }
 .header-nav li{
     margin: auto;
@@ -53,6 +54,7 @@ nav.header{
     margin-left: 32px;
     text-transform: uppercase;
     background-color: var(--light-gray);
+    
 }
 .action-btn:hover{
     background-color: hsl(270, 9%, 17%);
@@ -61,6 +63,9 @@ nav.header{
 }
 .heading {
     font-family: 'DM Serif Display', serif;
+}
+.toggle-btn{
+    display: none;
 }
 #toggleBtn{
 background-image: url('/images/icon-hamburger.svg');
@@ -275,7 +280,7 @@ text-transform: uppercase;
 /* Mobile View */
 @media screen and (max-width: 600px) {
     .header .collapse-items {display: none;}
-    .collapse-items button.toggle-btn {
+    button.toggle-btn {
       float: right;
       display: block;
     }
@@ -286,6 +291,7 @@ text-transform: uppercase;
     .responsive {position: relative;}
     .responsive button.toggle-btn {
         z-index: 1;
+        display: block;
     }
     .responsive {position: relative;}
     .responsive .collapse-items {
