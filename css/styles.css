@@ -139,3 +139,28 @@ section.landing{
 }
 
 /* Find out More section */
+section.banner{
+    background-color: var(--dark-violet-color);
+    color: var(--light-gray);
+    display: flex;
+    padding: 6% 8% ;
+
+}
+.banner div {
+    min-width: 50%;
+}
+.banner div:last-child{
+    text-align: right;
+}
+.banner div  h1{
+    font-size: 3.6rem;
+}
+.banner-btn {
+    border: 1px solid var(--light-gray);
+    background-color: transparent;
+    color: var(--light-gray);
+}
+.banner-btn:hover{
+    background-color: var(--light-gray);
+    color: var(--dark-violet-color);
+}
