@@ -319,4 +319,16 @@ text-transform: uppercase;
         font-size: 2.8rem;
     }
 
+    footer .branding{
+        flex-direction: column;
+        text-align: center;
+        padding-top: 16%;
+    }
+    .branding ul{
+        margin: 5% auto;
+        padding: 0;
+        
+    }
+
+
   }
