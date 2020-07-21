@@ -297,6 +297,8 @@ text-transform: uppercase;
       background-color: var(--very-dark-violet);
       min-width: 100%;
       top: 45px;
+      height: 540px;
+      
     }
     .responsive .opened#toggleBtn{
         background-image: url('/images/icon-close.svg');
