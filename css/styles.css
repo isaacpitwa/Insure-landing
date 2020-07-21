@@ -276,6 +276,7 @@ text-transform: uppercase;
   @media screen and (max-width: 600px) {
       section.landing{
           text-align: center;
+          background: none;
       }
     .landing .first-row{
         flex-direction: column-reverse;
