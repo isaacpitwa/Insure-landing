@@ -56,6 +56,10 @@ nav.header{
 .heading {
     font-family: 'DM Serif Display', serif;
 }
+button.toggle-btn{
+display: none;
+}
+
 
 
 section.landing{
@@ -75,7 +79,7 @@ section.landing{
     margin-bottom: 9%;
 }
 .landing h1{
-        font-size: 66px;
+        font-size: 4.2rem;
 }
 .landing p{
     margin-top: 9%;
@@ -99,9 +103,12 @@ section.landing{
 .landing .illustration{
     position: relative;
 }
-.landing .illustration img{
+.landing .illustration .img-container{
     position: absolute;
     z-index: 1;
+    background-image: url('/images/image-intro-desktop.jpg');
+    height: 650px;
+    width: 540px;
 }
 
 /* different section styles */
@@ -191,7 +198,7 @@ footer .branding {
     margin-left: auto;
 }
 .branding ul li {
-    padding-right: 10%;
+    padding-right: 15px;
 }
 .branding ul li:last-child{
     padding: 0;
@@ -203,8 +210,9 @@ footer .branding {
 .icon{
     width: 24px;
     height: 24px;
-    background-size: cover;
+    background-size: contain;
     display: flex;
+    background-repeat: no-repeat;
 }
 .icon:hover{
     filter: invert(13%) sepia(20%) saturate(421%) hue-rotate(227deg) brightness(88%) contrast(90%);
@@ -214,6 +222,8 @@ footer .branding {
 }
 .icon-twitter{
     background-image: url('/images/icon-twitter.svg');
+    width: 28px;
+    height: 28px;
 }
 .icon-pinterest{
     background-image: url('/images/icon-pinterest.svg');
@@ -226,9 +236,11 @@ footer hr {
 }
 .helpful-links{
     display: flex;
-    justify-content: space-between;
 }
 
+footer .list {
+    margin-right: auto;
+}
 footer .list h6 {
     font-size: .8rem;
     text-transform: uppercase;
@@ -250,3 +262,88 @@ text-transform: uppercase;
 .helpful-links .link-item  a:hover{
     text-decoration: underline;
 }
+
+
+/* Mobile View */
+@media screen and (max-width: 600px) {
+    .collapse-items ul, .collapse-items button.action-btn {display: none;}
+    .collapse-items button.toggle-btn {
+      float: right;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+      section.landing{
+          text-align: center;
+          background: none;
+      }
+    .landing .first-row{
+        flex-direction: column-reverse;
+        padding: 0;
+    }    
+    .landing .illustration  .img-container{
+        position: relative;
+        z-index: 0;
+        background-image: url('/images/image-intro-mobile.jpg');
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: cover;
+        width: 100%;
+    }
+    .landing  .first-row .dash{
+        display: none;
+    }
+    .landing .content{
+        max-width: unset;
+        padding: 21% 3%;
+        background: url('/images/bg-pattern-intro-left-mobile.svg') left top , url('/images/bg-pattern-intro-right-mobile.svg')  bottom right  var(--dark-violet-color);
+        background-repeat: no-repeat;
+        background-size: 7rem,4rem;;
+    }
+
+    .different .dash {
+        margin: 8% auto;
+        width: 32%;
+    }
+    .different-heading{
+        font-size: 2.7rem;
+    }
+    .difference {
+        flex-direction: column;
+    }
+    .difference .reason{
+        margin-top: 18%;
+    }
+    
+    section.banner{
+        flex-direction: column;
+        text-align: center;
+        background-image: url('/images/bg-pattern-how-we-work-mobile.svg');
+    }
+    .banner div h1{
+        font-size: 2.8rem;
+    }
+    .footer{
+        background-image: url('/images/bg-pattern-footer-mobile.svg');
+        background-position: top left;
+    }
+    footer .branding{
+        flex-direction: column;
+        text-align: center;
+        padding-top: 16%;
+    }
+    .branding ul{
+        margin: 5% auto;
+        padding: 0;
+        
+    }
+
+    .footer .helpful-links{
+        flex-direction: column;
+    }
+    .footer .list{
+        margin: 3% auto;
+    }
+
+  }

@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-<nav class="header">
+<nav class="header" id="header">
   <a class="brand" href="#">
     <img src="./images/logo.svg" alt="Insure"/>
   </a>
@@ -33,6 +33,7 @@
       <a class="nav-link" href="#">Account</a>
     </li>
   </ul>
+  <button class="toggle-btn" onclick="toggleNavMenu()"><img src="./images/icon-hamburger.svg" alt="Menu" /></button>
   <button class="action-btn" name="View Plans">View plans</button>
  </div>
 
@@ -48,7 +49,7 @@
         <button class="action-btn landing-btn" name="View plan"> View plans</button>
     </div>
     <div class="illustration">
-      <img src="./images/image-intro-desktop.jpg" alt="Insecure Illustration"/>
+      <div class="img-container"></div>
     </div>
     </div>
 
@@ -145,6 +146,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Isaac Pitwa</a>.
   </div> -->
-  <link  href="./js/scripts.js">
+  <script src="./js/scripts.js"></script>
 </body>
 </html>
