@@ -169,3 +169,25 @@ section.banner{
     background-color: var(--light-gray);
     color: var(--dark-violet-color);
 }
+
+/* Footer */
+.footer{
+    margin-top: 8%;
+    padding: 6% 8%;
+    background-color: var(--light-gray);
+}
+footer .branding {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2%;
+}
+.branding ul{
+    display: flex;
+    list-style: none;
+}
+.branding ul li {
+    padding-right: 12%;
+}
+.branding ul li:last-child{
+    padding: 0;
+}
