@@ -79,7 +79,7 @@ section.landing{
     margin-bottom: 9%;
 }
 .landing h1{
-        font-size: 66px;
+        font-size: 4.2rem;
 }
 .landing p{
     margin-top: 9%;
@@ -103,9 +103,12 @@ section.landing{
 .landing .illustration{
     position: relative;
 }
-.landing .illustration img{
+.landing .illustration .img-container{
     position: absolute;
     z-index: 1;
+    background-image: url('/images/image-intro-desktop.jpg');
+    height: 650px;
+    width: 540px;
 }
 
 /* different section styles */
@@ -268,15 +271,43 @@ text-transform: uppercase;
       float: right;
       display: block;
     }
-    nav.responsive {position: relative;}
-  nav.responsive  button.toggle-btn{
-    position: absolute;
-    right: 0;
-    top: 0;
   }
-  nav.responsive .collapse-items li {
-    float: none;
-    display: block;
-    text-align: left;
-  }
+
+  @media screen and (max-width: 600px) {
+      .landing{
+          text-align: center;
+      }
+    .landing .first-row{
+        flex-direction: column-reverse;
+        padding: 0;
+    }    
+    .landing .illustration  .img-container{
+        position: relative;
+        z-index: 0;
+        background-image: url('/images/image-intro-mobile.jpg');
+        height: 451px;
+        width: 100%;
+    }
+    .landing  .first-row .dash{
+        display: none;
+    }
+    .landing .content{
+        max-width: unset;
+        padding: 21% 3%;
+    }
+
+    .different .dash {
+        margin: 8% auto;
+        width: 32%;
+    }
+    .different-heading{
+        font-size: 2.7rem;
+    }
+    .difference {
+        flex-direction: column;
+    }
+    .difference .reason{
+        margin-top: 18%;
+    }
+
   }
