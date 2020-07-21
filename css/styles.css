@@ -57,7 +57,11 @@ nav.header{
 
 
 section.landing{
-    background-color: var(--dark-violet-color);
+    background: url('/images/bg-pattern-intro-left-desktop.svg') left center , url('/images/bg-pattern-intro-right-desktop.svg')  top right  var(--dark-violet-color);
+    background-repeat: no-repeat;
+    background-size: 8rem,15rem;
+}
+.first-row{
     display: flex;
     padding: 8% 8% 10% 8%;
     color: var(--light-gray);
@@ -92,9 +96,44 @@ section.landing{
 }
 .landing .illustration{
     position: relative;
-    /* margin-left: 7%; */
 }
 .landing .illustration img{
     position: absolute;
     z-index: 1;
+}
+
+/* different section styles */
+
+.different .dash {
+    height: 2px;
+    background-color: var(--grayish-blue);
+    width: 15%;
+    margin-bottom: 5%;
+}
+ section.different{
+    padding: 21% 8% 8% 8%;
+    background-color: white;
+}
+.different-heading{
+    font-size: 3.2rem;
+    color: var(--very-dark-violet);
+}
+
+.difference {
+    display: flex;
+    padding: 8% 0 ;
+}
+.reason {
+    padding-right: 2%;
+}
+.reason:last-child{
+    padding: 0;
+}
+.reason-heading{
+    color: var(--very-dark-violet);
+    font-size: 2.1rem;
+}
+.reason p {
+    margin-top: 4%;
+    color: var(--dark-grayish-violet);
 }
