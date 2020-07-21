@@ -45,6 +45,7 @@ nav.header{
     font-size: 16px;
     margin-left: 32px;
     text-transform: uppercase;
+    background-color: var(--light-gray);
 }
 .action-btn:hover{
     background-color: hsl(270, 9%, 17%);
@@ -111,7 +112,7 @@ section.landing{
     margin-bottom: 5%;
 }
  section.different{
-    padding: 21% 8% 8% 8%;
+    padding: 21% 8% 3% 8%;
     background-color: white;
 }
 .different-heading{
@@ -143,8 +144,13 @@ section.banner{
     background-color: var(--dark-violet-color);
     color: var(--light-gray);
     display: flex;
-    padding: 6% 8% ;
-
+    margin: 0% 8% 0% 8% ;
+    padding: 3% 3%;
+    align-items: center;
+    background-image: url('/images/bg-pattern-how-we-work-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: top right -2%;
+    background-size: contain;
 }
 .banner div {
     min-width: 50%;
@@ -153,7 +159,7 @@ section.banner{
     text-align: right;
 }
 .banner div  h1{
-    font-size: 3.6rem;
+    font-size: 3.2rem;
 }
 .banner-btn {
     border: 1px solid var(--light-gray);
@@ -163,4 +169,80 @@ section.banner{
 .banner-btn:hover{
     background-color: var(--light-gray);
     color: var(--dark-violet-color);
+}
+/* Footer */
+.footer{
+    margin-top: 8%;
+    padding: 6% 8%;
+    background-color: var(--light-gray);
+    background-image: url('/images/bg-pattern-footer-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+footer .branding {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2%;
+}
+.branding ul{
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+}
+.branding ul li {
+    padding-right: 10%;
+}
+.branding ul li:last-child{
+    padding: 0;
+}
+.branding ul li a:hover{
+    cursor: pointer;
+    color: var(--dark-violet-color);
+}
+.icon{
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    display: flex;
+}
+.icon:hover{
+    filter: invert(13%) sepia(20%) saturate(421%) hue-rotate(227deg) brightness(88%) contrast(90%);
+}
+.icon-fb {
+    background-image: url('/images/icon-facebook.svg');
+}
+.icon-twitter{
+    background-image: url('/images/icon-twitter.svg');
+}
+.icon-pinterest{
+    background-image: url('/images/icon-pinterest.svg');
+}
+.icon-instagram{
+    background-image: url('/images/icon-instagram.svg');
+}
+footer hr {
+    margin-bottom: 4%;
+}
+.helpful-links{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .list h6 {
+    font-size: .8rem;
+    text-transform: uppercase;
+    color: var(--dark-grayish-violet);
+}
+footer .links {
+    list-style: none;
+    padding: 0;
+    margin-top: 28%;
+}
+.link-item {
+    margin: 8% 0;
+}
+.helpful-links .link-item  a{
+text-decoration: none;
+color: var(--dark-violet-color);
+text-transform: uppercase;
 }
