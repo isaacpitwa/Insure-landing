@@ -318,7 +318,9 @@ text-transform: uppercase;
     .banner div h1{
         font-size: 2.8rem;
     }
-
+    .footer{
+        background-image: url('/images/bg-pattern-footer-mobile.svg');
+    }
     footer .branding{
         flex-direction: column;
         text-align: center;
@@ -330,5 +332,11 @@ text-transform: uppercase;
         
     }
 
+    .footer .helpful-links{
+        flex-direction: column;
+    }
+    .footer .list{
+        margin: 3% auto;
+    }
 
   }
