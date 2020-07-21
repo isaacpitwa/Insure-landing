@@ -190,3 +190,30 @@ footer .branding {
 .branding ul li:last-child{
     padding: 0;
 }
+
+footer hr {
+    margin-bottom: 4%;
+}
+.helpful-links{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .list h6 {
+    font-size: .8rem;
+    text-transform: uppercase;
+    color: var(--dark-grayish-violet);
+}
+footer .links {
+    list-style: none;
+    padding: 0;
+    margin-top: 28%;
+}
+.link-item {
+    margin: 8% 0;
+}
+.link-item  a{
+text-decoration: none;
+color: var(--dark-violet-color);
+text-transform: uppercase;
+}
